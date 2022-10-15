@@ -1,0 +1,22 @@
+class Student{  
+ int id;  
+ int age;
+ String name; 
+ String surname;  
+}  
+class TestStudent2{  
+ public static void main(String args[]){  
+  Student s1=new Student();  
+  Student s2=new Student(); 
+  s1.id=1540111;  
+  s1.age=25;  
+  s1.name="Szymon";
+  s1.surname="Nowak";
+  s2.id=1540112;  
+  s2.age=23;  
+  s2.name="Eryk";
+  s2.surname="Komrat";
+  System.out.println(s1.id+" "+s1.age+" "+s1.name+" "+s1.surname);
+  System.out.println(s2.id+" "+s2.age+" "+s2.name+" "+s2.surname);
+ }  
+}  
