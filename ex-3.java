@@ -6,7 +6,6 @@ public class Theater
 		System.out.println(movie1.movieInformation());
 	}
 }
-
 class Movie
 {
     private String name;
@@ -20,7 +19,6 @@ class Movie
         this.lenght=le;
         this.movieActors=ac;
     }
-    
     public String movieInformation()
     {
         String movies;
