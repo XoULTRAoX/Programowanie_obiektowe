@@ -2,47 +2,58 @@ public class Main
 {
 	public static void main(String args[])
 	{
-		Min m = new Min();
-		System.out.println(m.min(10, 20));
-		Max n = new Max();
-		System.out.println(n.max(10, 20));
-		Avg a = new Avg();
-		System.out.println(a.avg(10, 20));
+		Min m = new Min(10,20);
+		m.min();
+		Max n = new Max(10,20);
+		n.max();
+		Avg a = new Avg(10,20);
+		a.avg();
 
 	}
 }
 
-
-
-public class Min{
-	public int min(int x, int y)
-	{
-	    if (x<y){
-		return x;
+class Min{
+    int a;
+    int b;
+	Min(int a, int b){
+	    this.a = a;
+	    this.b = b;
+	}
+    public void min(){
+	    if (a<b){
+	    System.out.println("Min: " + a);
 	    }
 	    else{
-	    return y;
+	    System.out.println("Min: " + b);
 	    }
 	    }
 	}
-  
-  
-  class Max {
-	public int max(int x, int y)
-	{
-	    if (y>x){
-		return y;
+
+ class Max{
+    int a;
+    int b;
+	Max(int a, int b){
+	    this.a = a;
+	    this.b = b;
+	}
+    public void max(){
+	    if (a>b){
+	    System.out.println("Max: " + a);
 	    }
 	    else{
-	    return x;
+	    System.out.println("Max: " + b);
 	    }
 	    }
 	}
   
-  
-  class Avg {
-	public int avg(int x, int y)
-	{
-		return (y+x)/2;
+  class Avg{
+    int a;
+    int b;
+	Avg(int a, int b){
+	    this.a = a;
+	    this.b = b;
 	}
-}
+    public void avg(){
+	    System.out.println("Avg: " + (a+b)/2);
+	    }
+	}
