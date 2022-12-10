@@ -1,4 +1,4 @@
-Main.java
+//Main.java
 
 public class Main {
   public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class Main {
   }
 }
 
-FakeCantor.java
+//FakeCantor.java
 
 import java.util.HashMap;
 
@@ -36,7 +36,7 @@ public class FakeCantor {
 
 }
 
-Euro.java
+//Euro.java
 
 public class Euro implements Currency {
   private FakeCantor fkc = new FakeCantor();
@@ -73,7 +73,7 @@ public class Euro implements Currency {
   }
 }
 
-Currency.java
+//Currency.java
 
 public interface Currency {
   Currency addedCurrency(float value, String currency);
